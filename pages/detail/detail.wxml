@@ -1,0 +1,61 @@
+<scroll-view scroll-y="{{scrollY}}">
+    <view class="detail_wrapper">
+        <view class="header">
+            <view class="address">{{address}}</view>
+            <form bindsubmit="formSubmit">
+                <view class="searchInput">
+                    <input class="fs14" type="text" name="address" placeholder="搜索信息标题" />
+                </view>
+                <button class="btn" form-type="submit">
+                    <view class="so_img">
+                        <image src="../../images/so.png"></image>
+                    </view>
+                </button>
+            </form>
+        </view>
+        <swiper class="swiperWrapper" indicator-dots="true" indicator-active-color="#ed414a" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <swiper-item class="swiper_item" wx:for="{{carousList}}" wx:key="{{index}}">
+                <image src="{{item.url}}" style='width:100%;height: 100%;vertical-align: top;'></image>
+            </swiper-item>
+        </swiper>
+        <view class="browseWrapper">
+            <view class="browse fs14 common">浏览: 20000</view>
+            <view class="fubu fs14 common">发布: 54</view>
+            <view class="fenxiang fs14 common">分享: 21</view>
+        </view>
+        <view class="switchBar">
+            <view class="switchTitle fs14">切换城市</view>
+            <view class="address_list">
+                <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                    <swiper-item class="swiper-item" wx:for="{{addressList}}" wx:key="{{index}}" catchtap="switch" data-type="{{item.type}}">
+                        {{item.address}}
+                    </swiper-item>
+                </swiper>
+            </view>
+        </view>
+        <view class="swiper_wrapper">
+            <view class="item-list" wx:for="{{swiperList}}" wx:key="{{index}}">
+                <view class="itemImg">
+                    <image src="{{item.imgUrl}}"></image>
+                </view>
+                <view class="text fs14">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="noticeWrapper">
+            <view class="notice_content">
+                <view class="noticeImg">
+                    <image src="../../images/notice.png"></image>
+                </view>
+            </view>
+            <view class="noticeDesc">
+                <swiper class="swiper-wrapper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                    <swiper-item class="swiper-item" wx:for="{{noticeList}}" wx:key="{{index}}">
+                        <view class="text fs14">{{item.text}}</view>
+                        <view class="text fs14">{{item.text1}}</view>
+                    </swiper-item>
+                </swiper>
+            </view>
+        </view>
+        <otherBar id="otherBar"></otherBar>
+    </view>
+</scroll-view>

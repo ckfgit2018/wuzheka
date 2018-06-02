@@ -1,0 +1,15 @@
+<view class="huaTi">
+    <view class="header">
+        <view class="avatar"></view>
+        <view class="kuang"></view>
+        <view class="nickName fs14 text_center">Allow2018</view>
+    </view>
+    <view class="tabbarBtn">
+        <view class="btnItem fs14 {{item.isActive?'active':''}}" wx:for="{{btnWrapper}}" wx:key="{{index}}" bindtap="switchContent" data-type="{{item.type}}" data-index="{{index}}">{{item.text}}</view>
+    </view>
+    <view class="content">
+        <view wx:if="{{selectType==45}}">我是话题</view>
+        <view wx:else>我是回复</view>
+    </view>
+    <tabbar id="tabbar"></tabbar>
+</view>

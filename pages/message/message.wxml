@@ -1,0 +1,67 @@
+<scroll-view scroll-y="{{scrollY}}">
+    <view class="message">
+        <view class="top">
+            <view class="title fs14">我的信息</view>
+            <view class="back">
+                <image src="../../images/back.png"></image>
+            </view>
+        </view>
+        <view class="tabbarBtn">
+            <view class="btnItem fs14 {{item.isActive?'active':''}}" wx:for="{{messageWrapper}}" wx:key="{{index}}" bindtap="switch" data-index="{{index}}" data-type="{{item.type}}">{{item.name}}</view>
+        </view>
+        <view class="mes_content" wx:if="{{selectList.length>0}}">
+            <view class="mess_item" wx:for="{{selectList}}" wx:key="{{item}}">
+                <view class="shanchu">
+                    <view class="edit icon" bindtap="editUser">
+                        <image src="../../images/bianji.png"></image>
+                    </view>
+                    <view class="delect icon">
+                        <image src="../../images/delect.png"></image>
+                    </view>
+                </view>
+                <view class="contentInfo">
+                    <view class="baseInfo">
+                        <view class="title">{{item.title}}</view>
+                        <view class="otherInfo">
+                            <view class="salary common">{{item.salary}}</view>
+                            <view class="num common">{{item.num}}名</view>
+                            <view class="workfiy num common">{{item.workfiy}}</view>
+                        </view>
+                        <view class="endTime">{{item.endTime}}到期</view>
+                        <view class="telephone">
+                            <view class="phoneIcon">
+                                <image src="http://qiye.dejiplaza.com/we10/addons/enjoy_dz/public/images/icon/phonegb.gif"></image>
+                            </view>
+                            <view class="phone">{{item.telephone}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="treat">
+                	<view class="treat_item" wx:for="{{item.treat}}" wx:key="{{index}}">{{item}}</view>
+                </view>
+                <view class="hmfenleit">
+                	<view class="startTime fs14">{{item.startTime}}</view>
+                	<view class="look fs14" bindtap="toWorkDetail" data-item="{{item}}">查看详情>></view>
+                </view>
+                <view class="address">
+                	<view class="sanjiao"></view>
+                	<view class="hmfenif">
+                		<view class="dinwei">
+                			<image src="../../images/dingwei.png"></image>
+                		</view>
+                		<view class="companyName">公司: {{item.company}}</view>
+                		<view class="distant">km</view>
+                	</view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="noMessage">
+        	<view class="no_content">
+        		<view class="noImg">
+        			<image src="../../images/none.png"></image>
+        		</view>
+        		<view class="text text_center fs14">你还没有发布消息,<text class="now fs14">现在就去发布</text></view>
+        	</view>
+        </view>
+    </view>
+</scroll-view>

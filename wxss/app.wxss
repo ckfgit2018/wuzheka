@@ -1,0 +1,16 @@
+@import './common/color.wxss';
+@import './common/background.wxss';
+@import './common/margin.wxss';
+@import './common/font.wxss';
+.text_center{
+	text-align: center !important;
+}
+.clear{
+	clear: both !important;
+}
+.fl{
+	float: left !important;
+}
+.fr{
+	float: right !important;
+}

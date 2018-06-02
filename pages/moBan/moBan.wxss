@@ -1,0 +1,44 @@
+.moBanWrapper {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+}
+
+.browse {
+    width: 100%;
+    height: 100rpx;
+    padding-left: 40rpx;
+    color: #333;
+    font-size: 32rpx;
+    line-height: 100rpx;
+}
+
+.moban_show {
+    width: 100%;
+    height: auto;
+    padding-top: 40rpx;
+    background-color: #fff;
+}
+
+.moban_show .moban_item {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+}
+
+.moban_item .mo_img {
+    width: 54.5%;
+    margin: 0 auto;
+    height: 100rpx;
+}
+
+.mo_img image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.moban_item .text {
+    text-align: center;
+}

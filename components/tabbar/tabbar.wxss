@@ -1,0 +1,33 @@
+.tabbar_wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    background-color: #fff;
+}
+
+.tabbar_wrapper .tabbar_item {
+    flex: 1;
+    height: 100rpx;
+}
+.tabbar_item .item_img{
+    width: 45rpx;
+    height: 45rpx;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+}
+.item_img image{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.tabbar_item .text{
+    font-size: 28rpx;
+    text-align: center;
+    color: #A5A5A6;
+}
+.text.active{
+    color: #EFA7B1;
+}

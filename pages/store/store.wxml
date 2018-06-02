@@ -1,0 +1,29 @@
+<view class="storeWrapper">
+    <view class="nearStroe">
+        <view class="menu_wrapper">
+            <view class="menu_title {{item.isActive?'active':''}}" bindtap="changClassfiy" data-index="{{index}}" wx:for="{{meunWrapper}}" data-type="{{item.type}}" wx:key="{{index}}">{{item.name}}</view>
+        </view>
+        <view class="store_content">
+            <view class="store_item" wx:for="{{showList}}" wx:key="{{index}}">
+                <view class="store_img">
+                    <image src="../../images/weichenshi.jpg"></image>
+                </view>
+                <view class="storeInfo">
+                    <view class="text_title fs14">{{item.title}}</view>
+                    <view class="text_flow m-p fs14">{{item.desc}}</view>
+                    <view class="follow fs14">{{item.peopleNum}}人关注|{{item.address}}
+                        <view class="distance fs14">{{item.distance}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="twoList" wx:if="{{isShow}}">
+            <view class="list-item fs14 {{item.isActive?'active':''}}" wx:for="{{list}}" wx:key="{{index}}" catchtap="selecteThreeList" data-index="{{index}}" data-type="{{item.type}}">{{item.name}}</view>
+            <view class="mask" wx:if="{{isShow}}"></view>
+        </view>
+        <view class="threeList" animation="{{animationData}}" wx:if="{{meunWrapperType==1 && isShowList}}">
+            <view class="three_list fs14" wx:for="{{selectedList}}" wx:key="{{index}}" data-index="{{index}}" data-type="{{item.type}}" catchtap="showList">{{item.name}}</view>
+        </view>
+    </view>
+    <tabbar id="tabbar"></tabbar>
+</view>

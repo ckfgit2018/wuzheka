@@ -1,0 +1,23 @@
+<view class="editUser">
+    <from>
+        <view class="contentWrapper">
+            <view class="itemList">
+                <view class="name">公司</view>
+                <view class="input">
+                    <input type="text" name="company" value="{{workfiy.company}}" />
+                </view>
+            </view>
+            <view class="itemList">
+                <view class="name">工资</view>
+                <view class="input">
+                    <input type="text" name="company" value="{{workfiy.salary}}" />
+                </view>
+                <view class="radio_group">
+                	<view class="label" wx:for="{{selectType}}" wx:key="{{index}}">
+                		<view class="radio"></view><text class="fs14">{{item.value}}</text>
+                	</view>
+                </view>
+            </view>
+        </view>
+    </from>
+</view>

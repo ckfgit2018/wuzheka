@@ -1,0 +1,128 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wxfc39bbdf0dbf8eb6",
+	"projectname": "%E4%BA%94%E6%8A%98%E5%8D%A1",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "我的",
+					"pathName": "pages/user/user",
+					"query": "type=3"
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "五折卡开通",
+					"pathName": "pages/wuZhe/wuZhe",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "折扣更多",
+					"pathName": "pages/index/more",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/user/login",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "商家",
+					"pathName": "pages/store/store",
+					"query": "selectType=1"
+				},
+				{
+					"id": -1,
+					"name": "首页广告详情",
+					"pathName": "pages/detail/detail",
+					"query": "selectType=1"
+				},
+				{
+					"id": 7,
+					"name": "模板",
+					"pathName": "pages/moBan/moBan",
+					"query": "type=1"
+				},
+				{
+					"id": 8,
+					"name": "充值",
+					"pathName": "pages/recharge/recharge",
+					"query": "type=2"
+				},
+				{
+					"id": -1,
+					"name": "其他我的",
+					"pathName": "pages/otherUser/otherUser",
+					"query": "type=3"
+				},
+				{
+					"id": -1,
+					"name": "我的话题",
+					"pathName": "pages/huaTi/huaTi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的信息",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "工作详情",
+					"pathName": "pages/workDetail/workDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑",
+					"pathName": "pages/editUser/editUser",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "五折超市",
+					"pathName": "pages/wuShop/wuShop",
+					"query": ""
+				}
+			]
+		}
+	}
+}

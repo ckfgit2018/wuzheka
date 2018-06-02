@@ -1,0 +1,12 @@
+.bgRed{
+	background-color: rgb(227,78,99) !important;
+}
+.bgMain{
+	background-color: #f5f5f5;
+}
+.bgGray{
+	background-color: rgb(136,136,136) !important;
+}
+.bgtime{
+	background-color: rgb(102,102,102) !important;
+}

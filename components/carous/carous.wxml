@@ -1,0 +1,7 @@
+<view class="carous_wrapper">
+	<swiper class="swiper_wrapper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#F60">
+		<swiper-item class="swiper-item" wx:for="{{carousList}}" wx:key="{{index}}">
+			<image src="{{item.url}}" class="slide-image"></image>
+		</swiper-item>
+	</swiper>
+</view>

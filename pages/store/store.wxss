@@ -1,0 +1,148 @@
+.nearStroe {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.menu_wrapper {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    border-bottom: solid 1px #d3d3d3;
+    border-top: solid 1px #d3d3d3;
+}
+
+.menu_wrapper .menu_title {
+    flex: 1;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 32rpx;
+    background-color: #fff;
+    color: rgb(128, 128, 128);
+    border-right: 2rpx solid #d3d3d3;
+}
+
+.menu_title.active {
+    color: #e34f63 !important;
+}
+
+.menu_title:last-child {
+    border-right: none;
+}
+
+.store_content .store_item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20rpx 12rpx;
+    border-bottom: 2rpx solid #f2f2f2;
+    box-sizing: border-box;
+}
+
+.store_item:last-child {
+    border-bottom: 0rpx;
+}
+
+.store_item .store_img {
+    flex: 0 0 35%;
+    width: 35%;
+    height: 160rpx;
+}
+
+.store_img image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.store_item .storeInfo {
+    flex: 1;
+    height: 100%;
+    padding-left: 12rpx;
+    box-sizing: border-box;
+}
+
+.storeInfo .text_title {
+    overflow: hidden!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+    color: #080808;
+}
+
+.storeInfo .text_flow {
+    height: 60rpx!important;
+    line-height: 60rpx!important;
+    color: #808080;
+    margin: 13rpx 0rpx;
+}
+
+.storeInfo .follow {
+    position: relative;
+    color: #808080;
+    box-sizing: border-box;
+}
+
+.follow .distance {
+    position: absolute;
+    top: 0rpx;
+    right: 20rpx;
+}
+
+.twoList {
+    position: absolute;
+    width: 100%;
+    height: 600rpx;
+    top: 87rpx;
+    left: 0rpx;
+    z-index: 19;
+}
+
+.twoList .list-item {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: left;
+    padding-left: 20rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #eee;
+}
+.list-item.active{
+   color: #e34f63 !important; 
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 85rpx;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.threeList {
+    position: absolute;
+    top: 87rpx;
+    right: 0rpx;
+    transform: translate(502rpx,0);
+    width: 67%;
+    height: 600rpx;
+    background-color: #eee;
+    z-index: 20;
+}
+
+.threeList .three_list {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: left;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #F5F5F5;
+}

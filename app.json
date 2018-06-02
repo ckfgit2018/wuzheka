@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/admission/admission",
+    "pages/store/store",
+    "pages/user/user",
+    "pages/wuZhe/wuZhe",
+    "pages/index/more",
+    "pages/user/login",
+    "pages/index/nearStroe",
+    "pages/detail/detail",
+    "components/otherBar/otherBar",
+    "pages/moBan/moBan",
+    "pages/recharge/recharge",
+    "pages/otherUser/otherUser",
+    "pages/huaTi/huaTi",
+    "pages/message/message",
+    "pages/workDetail/workDetail",
+    "pages/editUser/editUser",
+    "pages/wuShop/wuShop"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

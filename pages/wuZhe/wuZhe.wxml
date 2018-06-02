@@ -1,0 +1,33 @@
+<view class="wuzhe">
+    <view class="header">
+        <view class="top">
+            <view class="img">
+                <image src="../../images/five1.png"></image>
+            </view>
+            <view class="noKa fs14">你暂未开通折扣卡</view>
+            <view class="bianhao fs14">NO.211116364</view>
+            <view class="toOpen fs14" bindtap="toOpen">去开通折扣卡</view>
+        </view>
+    </view>
+    <view class="fiveCar_Explain">
+        <view class="liyi">折扣卡权益</view>
+        <text class="desc fs14">
+            1.享受全国联盟城市五折通用\n
+            2.在指定签约商家享受特定日期的五折优惠\n
+            3.体验卡每日仅限激活一次\n
+            4.五折卡一经购买不予退款
+        </text>
+    </view>
+    <view class="buyWays">
+        <view class="way_itme fs14 {{item.isClick?'active':''}}" wx:for="{{buyWays}}" wx:key="{{index}}" bindtap="changStatus" data-type="{{item.type}}" data-index="{{index}}">{{item.name}}</view>
+    </view>
+    <view class="content" wx:if="{{selectType==1}}">
+        <view class="typeItem" wx:for="{{6}}">
+            <view class="radio_p">
+                <view class="NoSelect"></view>
+                <view class="radio_span">季卡 (90天)</view>
+            </view>
+            <view class="save fr">￥0.03(省90.00元)</view>
+        </view>
+    </view>
+</view>

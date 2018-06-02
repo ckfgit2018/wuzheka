@@ -1,0 +1,9 @@
+.m20{
+	margin: 40rpx 0 !important;
+}
+.mt10{
+	margin-top: 20rpx !important;
+}
+.mt15{
+	margin-top: 30rpx !important;
+}

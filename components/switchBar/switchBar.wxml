@@ -1,0 +1,10 @@
+<view class="tabbar_wrapper">
+	<block wx:for="{{titleList}}" wx:key="{{index}}">
+		<view class="bar_item fs14 {{item.isShow?'active':''}} {{index==titleList.length-1?'splice':''}}" bindtap="changClass" data-index="{{index}}">{{item.name}}
+			<view class="bar_mask {{index==titleList.length-1?'splice':''}}" wx:if="{{item.isShow}}">
+				<view class="mask_item fs14 {{activeIndex==0?'first':''}}" wx:for="{{list}}" wx:key="{{index}}" catchtap="toget" data-index="{{index}}">{{item}}</view>
+			</view>
+			<view class="line"></view>
+		</view>
+	</block>
+</view>

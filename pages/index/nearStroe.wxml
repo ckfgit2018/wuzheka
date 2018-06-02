@@ -1,0 +1,19 @@
+<scroll-view scroll-y="true">
+<view class="nearStroe">
+    <view class="menu_wrapper">
+        <view class="menu_title {{item.isActive?'active':''}}" wx:for="{{meunWrapper}}" wx:key="{{index}}">{{item.name}}</view>
+    </view>
+    <view class="store_content">
+        <view class="store_item" wx:for="{{showList}}" wx:key="{{index}}">
+            <view class="store_img">
+                <image src="../../images/weichenshi.jpg"></image>
+            </view>
+            <view class="storeInfo">
+                <view class="text_title fs14">{{item.title}}</view>
+                <view class="text_flow m-p fs14">{{item.desc}}</view>
+                <view class="follow fs14">{{item.peopleNum}}人关注|{{item.address}} <view class="distance fs14">{{item.distance}}</view></view>
+            </view>
+        </view>
+    </view>
+</view>
+</scroll-view>

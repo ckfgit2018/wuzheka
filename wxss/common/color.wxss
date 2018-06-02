@@ -1,0 +1,9 @@
+.colorRed{
+	color: rgb(227,78,99) !important;
+}
+.colorGray{
+	color: rgb(136,136,136) !important;
+}
+.colortime{
+	color: rgb(102,102,102) !important;
+}

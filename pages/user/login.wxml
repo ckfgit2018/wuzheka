@@ -1,0 +1,23 @@
+<view class="login_wrapper">
+    <view class="contentWrapper">
+        <view class="owl-login">
+            <view class="head" wx:if="{{!isShow}}"></view>
+            <view class="head head-r" wx:if="{{!isShow}}"></view>
+            <view class="arms">
+                <view class="arm {{isShow?'active':''}}"></view>
+                <view class="arm arm-r {{isShow?'active':''}}"></view>
+            </view>
+        </view>
+        <form bindsubmit="formSubmit" class="formWrapper">
+            <view class="userName common">
+                <input class="username fs14" placeholder="用户名/或手机号码" type="text" name="userName" />
+            </view>
+            <view class="passWorld common">
+                <input class="passworld fs14" bindblur="bindblur"  bindfocus="bindfocus" focus='true' type="passworld" name="passWorld" placeholder="登陆密码" value="{{value}}"  passworld="true" bindinput="bindinput"/>
+            </view>
+            <button form-type="submit" class="btn">登陆</button>
+            <button class="weiLogin"> 微信一键登陆</button>
+        </form>
+        <view class="noPassWorld">忘记密码</view>
+    </view>
+</view>

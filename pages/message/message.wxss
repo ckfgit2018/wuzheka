@@ -1,0 +1,335 @@
+.message {
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.message .top {
+    position: relative;
+    width: 100%;
+    height: 100rpx;
+    background-color: #2ebba9;
+}
+
+.top .title {
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+}
+
+.top .back {
+    width: 40rpx;
+    height: 60rpx;
+    position: absolute;
+    top: 20rpx;
+    background-color: #fff;
+    left: 20rpx;
+}
+
+.back image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.tabbarBtn {
+    width: 100%;
+    height: 102rpx;
+    background-color: #fff;
+    border-bottom: 2rpx solid #f1f1f1;
+    display: flex;
+}
+
+.btnItem {
+    flex: 1;
+    height: 100rpx;
+    color: #808080;
+    border-bottom: 2rpx solid #fff;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.btnItem.active {
+    z-index: 11;
+    color: #ed414a;
+    border-bottom: 2rpx #ed414a solid;
+}
+
+.mes_content {
+    width: 100%;
+    height: auto;
+}
+
+.mess_item {
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    padding-bottom: 30rpx;
+    position: relative;
+    height: auto;
+}
+
+.mess_item .shanchu {
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    border-bottom: 2rpx #f1f1f1 solid;
+}
+
+.shanchu .icon {
+    position: absolute;
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.edit {
+    top: 26rpx;
+    right: 100rpx;
+}
+
+.delect {
+    top: 26rpx;
+    right: 20rpx;
+}
+
+.icon image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.contentInfo {
+    width: 94%;
+    margin-left: 3%;
+}
+
+.contentInfo .baseInfo {
+    width: 100%;
+    height: 100rpx;
+    box-sizing: border-box;
+}
+
+.baseInfo .title {
+    width: 60%;
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-right: 20rpx;
+    font-size: 36rpx;
+    color: #2ebba9;
+    margin-top: 20rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.baseInfo .otherInfo {
+    width: 100%;
+    height: 50rpx;
+    margin-top: 4rpx;
+}
+
+.otherInfo .common {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.salary {
+    color: red;
+    font-size: 36rpx;
+}
+
+.num {
+    padding: 0px 6rpx;
+    height: 38rpx;
+    line-height: 38rpx;
+    text-align: center;
+    background-color: #ff8e14;
+    color: #fff;
+    border-radius: 6rpx;
+    margin-top: 6rpx;
+    margin-right: 4rpx;
+    font-size: 24rpx;
+}
+
+.workfiy {
+    background-color: #1ddc9b;
+}
+
+.endTime {
+    position: absolute;
+    top: 130rpx;
+    right: 30rpx;
+    font-size: 24rpx;
+    background-color: #ed414a;
+    box-sizing: content-box;
+    padding: 0px 10rpx;
+    border-radius: 6rpx;
+    color: #FFF;
+    height: 44rpx;
+    line-height: 44rpx;
+    text-align: center;
+}
+
+.telephone {
+    position: absolute;
+    top: 200rpx;
+    right: 30rpx;
+    width: 232rpx;
+    height: 60rpx;
+    box-sizing: border-box;
+    padding: 0rpx 6rpx;
+    border-radius: 6rpx;
+    overflow: hidden;
+    background: #ed414a;
+}
+
+.phoneIcon {
+    display: inline-block;
+    vertical-align: top;
+    width: 60rpx;
+    height: 60rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 6rpx;
+}
+
+.phoneIcon image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.phone {
+    height: 60rpx;
+    line-height: 60rpx;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.treat {
+    width: 100%;
+    height: 40rpx;
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+}
+
+.treat .treat_item {
+    display: inline-block;
+    vertical-align: top;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.hmfenleit {
+    position: relative;
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 100%;
+    color: #999;
+    font-size: 26rpx;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 16rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+}
+
+.look {
+    position: absolute;
+    top: 0rpx;
+    right: 20rpx;
+    font-size: 26px;
+    color: #2ebba9;
+}
+
+.address {
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    font-size: 28rpx;
+    line-height: 52rpx;
+    padding: 4rpx 10rpx;
+    background: #eee;
+    margin-top: 24rpx;
+    color: #666;
+    box-sizing: border-box;
+}
+
+.address .sanjiao {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 10px 10px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #eee transparent;
+    top: 0rpx;
+    transform: translate(0, -38rpx);
+    left: 16rpx;
+}
+
+.hmfenif {
+    width: 94%;
+    height: 60rpx;
+    position: relative;
+}
+
+.hmfenif .dinwei {
+    display: inline-block;
+    vertical-align: top;
+    width: 32rpx;
+    height: 32rpx;
+    margin-top: 12rpx;
+}
+
+.dinwei image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.companyName {
+	display: inline-block;
+	vertical-align: top;
+    color: #2ebba9;
+    margin-top: 4rpx;
+    font-size: 28rpx;
+    margin-left: 8rpx;
+}
+.distant{
+	position: absolute;
+	top: 5rpx;
+	right: 0rpx;
+	transform: translate(20rpx,0);
+	color: red;
+}
+.noMessage{
+	width: 100%;
+	height: 1210rpx;
+	background-color: #f5f5f5;
+}
+.no_content{
+	margin-top: 40rpx;
+	padding: 0px 0 40rpx 0;
+	box-sizing: border-box;
+}
+.noImg{
+	width: 200rpx;
+	height: 200rpx;
+	margin: 0 auto;
+}
+.noImg image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.now{
+	color: red;
+	text-decoration: underline;
+}

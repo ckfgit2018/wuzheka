@@ -1,0 +1,9 @@
+.fs12{
+	font-size: 24rpx !important;
+}
+.fs14{
+	font-size: 28rpx !important;
+}
+.fs20{
+	font-size: 40rpx !important;
+}

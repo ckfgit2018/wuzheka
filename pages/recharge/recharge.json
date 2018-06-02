@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "充值",
+	"enablePullDownRefresh": true,
+	"usingComponents":
+	{
+		"otherBar": "../../components/otherBar/otherBar",
+		"Carous": "../../components/carous/carous"
+	}
+}

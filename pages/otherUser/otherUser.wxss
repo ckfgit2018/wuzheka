@@ -1,0 +1,85 @@
+.otherUser{
+	width: 100%;
+	height: 100%;
+	background-color: #f5f5f5;
+}
+.header {
+	position: relative;
+    height: 160rpx;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 24rpx;
+}
+.header .avatar{
+	position: absolute;
+	top: 20rpx;
+	left: 20rpx;
+	width: 120rpx;
+	height: 120rpx;
+	border: 2rpx solid red;
+}
+.avatar image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.header .userInfo{
+	width: 80%;
+	height: 120rpx;
+	position: absolute;
+	top: 20rpx;
+	right: 0rpx;
+}
+.userInfo .common{
+	width: 100%;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: left;
+	padding-left: 20rpx;
+	color: #808080;
+	box-sizing: border-box;
+}
+.contentWrapper{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+.contentWrapper .item-list{
+	position: relative;
+	width: 100%;
+	height: 100rpx;
+    border-bottom: 1px solid #f2f2f2;
+}
+.item-list .itemImg{
+	width: 90rpx;
+	height: 60rpx;
+	position: absolute;
+	top: 20rpx;
+	left: 10rpx;
+}
+.itemImg image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.item-list .text{
+	position: absolute;
+	width: 120rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	top: 20rpx;
+	left: 140rpx;
+	color: #808080;
+}
+.more{
+	position: absolute;
+	width: 40rpx;
+	height: 52rpx;
+	top: 24rpx;
+	right: 30rpx;
+}
+.more image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}

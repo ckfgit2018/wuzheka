@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "模板",
+	"enablePullDownRefresh": true,
+	"usingComponents":
+	{
+		"otherBar": "../../components/otherBar/otherBar",
+		"Carous": "../../components/carous/carous"
+	}
+}

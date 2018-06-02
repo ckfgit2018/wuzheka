@@ -1,0 +1,40 @@
+<view class="wuShop">
+    <view class="header">
+        <view class="top">
+            <view class="img">
+                <image src="../../images/five1.png"></image>
+            </view>
+            <view class="noKa fs14">你暂未开通折扣卡</view>
+            <view class="bianhao fs14">NO.211116364</view>
+            <view class="toOpen fs14" bindtap="toOpen">去开通折扣卡</view>
+        </view>
+    </view>
+    <view class="switchWrapper">
+        <scroll-view scroll-x="true">
+            <view class="switchItem">
+                <view class="month text_center fs14">06月</view>
+                <view class="all fs14 text_center">全部</view>
+            </view>
+            <view class="switchItem" wx:for="{{listItem}}" wx:key="{{index}}">
+                <view class="week text_center fs14">{{item.week}}</view>
+                <view class="day fs14 text_center">{{item.day}}</view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="content">
+        <scroll-view scroll-y="true">
+            <view class="list_item" wx:for="{{8}}" wx:key="{{index}}">
+                <view class="productImg">
+                    <image src="../../images/xianshi.jpg"></image>
+                </view>
+                <view class="otherInfo">
+                    <view class="shopName">text2</view>
+                    <view class="desc">全城热恋5折起</view>
+                    <view class="isUse">今天可用</view>
+                </view>
+                <view class="follow">230人关注</view>
+            </view>
+        </scroll-view>
+    </view>
+    <tabbar id="tabbar"></tabbar>
+</view>

@@ -1,0 +1,47 @@
+<scroll-view scroll-y="{{scrollY}}">
+    <view class="workDetail">
+        <view class="top">
+            <view class="title fs14">{{workDetail.workfiy}}</view>
+            <view class="back" bindtap="back">
+                <image src="../../images/back.png"></image>
+            </view>
+        </view>
+        <view class="jobshow">
+            <view class="jobName">
+                <view class="jobtitle fl">{{workDetail.title}}</view>
+                <view class="jobnum fr">{{workDetail.num}}</view>
+            </view>
+            <view class="salary">{{workDetail.salary}}</view>
+            <view class="telephone">电话: {{workDetail.telephone}}</view>
+            <view class="time">{{workDetail.startTime}}</view>
+        </view>
+        <view class="jobshowwadder">{{workDetail.company}}</view>
+        <view class="jobshowwadder link_gray">
+            <view class="icon">
+                <image src="../../images/addressIcon.png"></image>
+            </view>
+            <view class="address">地址: {{workDetail.address}}</view>
+        </view>
+        <view class="bgLine"></view>
+        <view class="jobshowtag">
+            <view class="tagList">
+                <view class="tabItem tag{{index+1}}" wx:for="{{workDetail.treat}}" wx:key="{{index}}">{{item}}</view>
+            </view>
+        </view>
+        <view class="bgLine"></view>
+        <view class="jobshowdesc">
+            <view class="descTitle">职位描述</view>
+            <view class="text">工作态度认真，负责</view>
+        </view>
+        <view class="bgLine"></view>
+        <view class="jobshowdesc">
+            <view class="jobshowImg">图片</view>
+            <view class="prompt fs12">点击图片可放大</view>
+        </view>
+        <view class="imgContent">
+            <view class="imgItem" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="prevImg" data-url="{{item}}">
+                <image src="{{item}}"></image>
+            </view>
+        </view>
+    </view>
+</scroll-view>

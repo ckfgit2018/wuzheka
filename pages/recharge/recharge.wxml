@@ -1,0 +1,41 @@
+<view class="recharge">
+    <view class="headTop"></view>
+    <view class="userInfo">
+        <view class="avatar">
+        </view>
+        <view class="nickName fs12">AllOW2108235</view>
+        <view class="rule fs14">换算规则: 1元=100金币</view>
+    </view>
+    <view class="moneyType">
+        <view class="typeItem" wx:for="{{moneyType}}" wx:key="{{index}}" bindtap="addMoney" data-type="{{item.type}}">
+            <view class="title fs14">{{item.goldCoin}}金币</view>
+            <view class="needMoney fs12">({{item.money}}元)</view>
+        </view>
+        <view class="mask" wx:if="{{isShowMask}}"></view>
+        <view class="selectType" wx:if="{{isShowMask}}">
+        	<view class="titles">充值金额</view>
+        	<view class="moneyValue">
+        		<view class="icon">￥</view>
+        		<view class="input">
+        			<input type="text" name="money" placeholder="0.1~1000之间" />
+        		</view>
+        	</view>
+        	<view class="desc">(充值1元=100金币)</view>
+        	<button class="btn">充值</button>
+        	<view class="closeImg" catchtap="closeMask">
+        		<image src="../../images/close.png"></image>
+        	</view>
+        </view>
+        <view class="otherType" bindtap="isOtherType">其他金额</view>
+    </view>
+    <view class="line">
+        <view class="descTitle fs14">土豪专区</view>
+    </view>
+    <view class="splieType">
+        <view class="typeItem" wx:for="{{spliceType}}" wx:key="{{index}}" bindtap="addMoney" data-type="{{item.type}}">
+            <view class="title fs14">{{item.goldCoin}}金币</view>
+            <view class="needMoney fs12">({{item.money}}元)</view>
+        </view>
+        <view class="prompt fs12">温馨提示: 若充值出现问题，请点击客服按钮，我们会尽快解决你的问题，谢谢！</view>
+    </view>
+</view>

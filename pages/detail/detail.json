@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "首页",
+	"enablePullDownRefresh": true,
+	"usingComponents":
+	{
+		"otherBar": "../../components/otherBar/otherBar",
+		"Carous": "../../components/carous/carous"
+	}
+}

@@ -1,0 +1,9 @@
+<view class="tabbar_wrapper">
+	<view class="tabbar_item" wx:for="{{tabbarList}}" wx:key="{{index}}" bindtap="changStatus" data-index="{{index}}" data-tourl="{{item.toUrl}}" data-type="{{item.type}}">
+		<view class="item_img">
+			<image wx:if="{{selectType==item.type||item.isActive}}" src="{{item.activeUrl}}"></image>
+			<image wx:else src="{{item.imgUrl}}"></image>
+		</view>
+		<view class="text {{selectType==item.type||item.isActive?'active':''}}">{{item.text}}</view>
+	</view>
+</view>

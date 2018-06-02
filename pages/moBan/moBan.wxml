@@ -1,0 +1,12 @@
+<view class="moBanWrapper">
+	<view class="browse">模板一览</view>
+	<view class="moban_show">
+		<view class="moban_item" wx:for="{{moBan}}" wx:key="{{index}}">
+			<view class="mo_img">
+				<image src="{{item.url}}"></image>
+			</view>
+			<view class="text fs14">{{item.text}}</view>
+		</view>
+	</view>
+	<otherBar id="otherBar"></otherBar>
+</view>

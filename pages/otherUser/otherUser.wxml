@@ -1,0 +1,21 @@
+<view class="otherUser">
+	<view class="header">
+		<view class="avatar"></view>
+		<view class="userInfo">
+			<view class="nickName common fs14">ALLOW2018</view>
+			<view class="goldCoin common fs14">0金币</view>
+		</view>
+	</view>
+	<view class="contentWrapper">
+		<view class="item-list" wx:for="{{itemList}}" wx:key="{{index}}" bindtap="towhere" data-index="{{index}}">
+			<view class="itemImg">
+				<image src="{{item.imgUrl}}"></image>
+			</view>
+			<view class="text fs14">{{item.name}}</view>
+			<view class="more">
+				<image src="../../images/more.png"></image>
+			</view>
+		</view>
+	</view>
+	<otherBar id="otherBar"></otherBar>
+</view>

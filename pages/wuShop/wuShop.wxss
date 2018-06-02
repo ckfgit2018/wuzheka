@@ -1,0 +1,155 @@
+.wuShop{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100rpx;
+	box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.header .top {
+    position: relative;
+    width: 100%;
+    height: 360rpx;
+    border-radius: 20rpx 20rpx 0rpx 0rpx;
+    background-color: #585858 !important;
+    margin-top: 2%;
+}
+
+.top .img {
+    position: absolute;
+    width: 200rpx;
+    height: 186rpx;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 7%;
+}
+
+.img image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.noKa {
+    position: absolute;
+    bottom: 20rpx;
+    left: 30rpx;
+    color: #fff;
+}
+
+.bianhao {
+    position: absolute;
+    top: 20rpx;
+    right: 30rpx;
+    color: #C7C7C7;
+}
+
+.toOpen {
+    position: absolute;
+    border: 2rpx solid #F9BE02;
+    padding: 8rpx;
+    color: #F9BE02;
+    right: 3%;
+    bottom: 8%;
+    border-radius: 4rpx;
+    max-width: 200rpx;
+}
+
+.switchWrapper {
+    width: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    height: 160rpx;
+    padding: 10rpx;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.switchItem {
+    width: 90rpx;
+    padding: 10rpx;
+    height: auto;
+    color: #666;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.all,
+.day {
+    margin-top: 8rpx;
+    width: 70rpx;
+    height: 70rpx;
+    border: thin solid #c8c8c8;
+    border-radius: 50%;
+    line-height: 70rpx;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+.content .list_item {
+	position: relative;
+    display: flex;
+    border-bottom: 2rpx solid #f2f2f2;
+    padding: 20rpx 12rpx;
+}
+
+.productImg {
+    flex: 0 0 240rpx;
+    width: 240rpx!important;
+    height: 140rpx!important;
+    margin-right: 12rpx!important;
+    background: url(http://qiye.dejiplaza.com/we10/addons/enjoy_five/public/images/loading.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 8rpx;
+}
+
+.productImg image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.otherInfo {
+    flex: 1;
+    height: 140rpx;
+}
+
+.otherInfo .shopName {
+    font-size: 30rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #080808;
+}
+
+.otherInfo .desc {
+    font-size: 30rpx;
+    height: 30px!important;
+    line-height: 30px!important;
+    overflow: hidden;
+    color: #666;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+}
+
+.otherInfo .isUse {
+    font-size: 30rpx;
+    line-height: 40rpx;
+    color: #e34f63;
+}
+
+.list_item .follow {
+	position: absolute;
+	top: 60rpx;
+	right: 20rpx;
+    font-size: 24rpx;
+    height: 60rpx !important;
+    line-height: 60rpx;
+    color: #666;
+}

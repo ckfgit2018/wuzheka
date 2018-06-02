@@ -1,0 +1,122 @@
+<scroll-view srcoll-y>
+    <view class="home bgMain">
+        <view class="bgRed top">
+            <view class="inputSearch">
+                <input type="text" name="search" placeholder="搜索" />
+            </view>
+        </view>
+        <view class="Carous_wrapper">
+            <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+                    <swiper-item class="swiper-item">
+                        <image src="{{item}}" class="slide-image" />
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="menu_wrapper">
+            <view class="menu_item" wx:for="{{itemList}}" wx:key="{{index}}" bindtap="toWuZhe">
+                <view class="menu_img">
+                    <image src="{{item.icon}}"></image>
+                </view>
+                <view class="text fs14 text_center">{{item.text}}</view>
+            </view>
+        </view>
+        <view class="messList_wrapper">
+            <view class="mess_title fs14">
+                <view class="mess_icon">
+                    <image src="../../images/xiaoxi.png"></image>
+                </view>消息通知</view>
+            <view class="list_item">
+                <swiper class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}">
+                    <block wx:for="{{messList}}" wx:key="{{index}}">
+                        <swiper-item class="swiper-item">{{item}}</swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+        <view class="content_wrapper">
+            <view class="content_top_left">
+                <view class="title">微城抢</view>
+                <view wx:if="{{endTime>0}}" class="timeWrapper">
+                    <view class="hours common">{{hours}}
+                        <text class="icon">:</text>
+                    </view>
+                    <view class="minute common">{{minute}}
+                        <text class="icon">:</text>
+                    </view>
+                    <view class="second common">{{second}}</view>
+                </view>
+                <view wx:else class="timeWrapper">
+                    <view class="hours common">开
+                        <text class="icon">:</text>
+                    </view>
+                    <view class="minute common">抢
+                        <text class="icon">:</text>
+                    </view>
+                    <view class="second common">啦</view>
+                </view>
+                <view class="food_img">
+                    <image src="../../images/food.jpg"></image>
+                </view>
+                <view class="text fs14">全程限时五折,先到先得</view>
+            </view>
+            <view class="content_top_right">
+                <view class="content_item" wx:for="{{2}}" bindtap="toDetail">
+                    <view class="titleName">微城论坛</view>
+                    <view class="textValue">微城圈信息发布,二手信息招聘</view>
+                    <view class="itemImage">
+                        <image src="../../images/jiaochen.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="discount_wrapper">
+            <view class="discount_title">
+                <view class="icon">
+                    <image src="../../images/kaitong.png"></image>
+                </view>
+                <view class="discount_text fs14">今日折扣卡</view>
+                <view class="more fs14" bindtap="toMore">更多
+                    <view class="moreImage">
+                        <image src="../../images/more.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="discount_content">
+                <view class="discount_item {{index==1?'two':''}}" wx:for="{{3}}">
+                    <view class="item_img">
+                        <image src="../../images/shouchang.png"></image>
+                    </view>
+                    <view class="text fs14">五折卡</view>
+                </view>
+            </view>
+        </view>
+        <view class="storeWrapper">
+            <view class="discount_title">
+                <view class="icon">
+                    <image src="../../images/fujin.png"></image>
+                </view>
+                <view class="discount_text fs14">附近商家</view>
+                <view class="more fs14" bindtap="findStore">更多
+                    <view class="moreImage">
+                        <image src="../../images/more.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="store_content">
+                <view class="store_item" wx:for="{{8}}">
+                    <view class="store_img">
+                        <image src="../../images/weichenshi.jpg"></image>
+                    </view>
+                    <view class="storeInfo">
+                        <view class="text_title fs14">Null</view>
+                        <view class="text_flow m-p fs14">今日尊享5折</view>
+                        <view class="follow fs14">120人关注|中山市</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <tabbar></tabbar>
+    </view>
+</scroll-view>

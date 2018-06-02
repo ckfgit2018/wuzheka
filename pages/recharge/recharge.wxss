@@ -1,0 +1,232 @@
+.headTop {
+    position: relative;
+    background-color: #dd594d;
+    height: 184rpx;
+    width: 100%;
+    border-bottom-left-radius: 46%;
+    border-bottom-right-radius: 46%;
+    box-shadow: 0 2rpx 14rpx #636363;
+}
+
+.userInfo {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 100rpx;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+}
+
+.userInfo .avatar {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 0 auto;
+    border: 2rpx solid #000;
+}
+
+.avatar image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.userInfo .nickName {
+    width: 100%;
+    height: 60rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 60rpx;
+    color: #808080;
+    margin: 10rpx 0;
+    text-align: center;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+}
+
+.userInfo .rule {
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    color: #808080;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+}
+
+.moneyType {
+    width: 100%;
+    height: auto;
+    margin-top: 240rpx;
+}
+
+.typeItem {
+    width: 30%;
+    height: 90rpx;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10rpx 1.3%;
+    border: 2rpx solid #dd594d;
+    border-radius: 8rpx;
+    text-align: center;
+}
+
+.typeItem .title {
+    width: 100%;
+    height: 50rpx;
+    color: #dd594d;
+    line-height: 50rpx;
+    text-align: center;
+}
+
+.typeItem .needMoney {
+    width: 100%;
+    height: 30rpx;
+    color: #dd594d;
+    line-height: 30rpx;
+    text-align: center;
+}
+
+.otherType {
+    width: 100%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #427fd6;
+}
+
+.line {
+    height: 18rpx;
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 16rpx;
+    border-top: 2rpx solid #ddd;
+}
+
+.line .descTitle {
+    position: absolute;
+    width: 200rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    background-color: #fff;
+    color: #808080;
+    top: 0rpx;
+    transform: translate(0, -16rpx);
+    left: 250rpx;
+}
+
+.spliceType {
+    width: 100%;
+    height: auto;
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.prompt {
+    color: #dd594d;
+    font-size: 20rpx;
+    margin: 20rpx auto;
+    width: 90%;
+    line-height: 48rpx;
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9)!important;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+}
+
+.selectType {
+    height: auto;
+    width: 86%;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    margin-left: -43%;
+    background-color: #fff;
+    z-index: 21;
+    border-radius: 8rpx;
+    padding-bottom: 20rpx;
+}
+
+.selectType .titles {
+    position: relative;
+    color: #808080;
+    height: 90rpx;
+    font-size: 32rpx;
+    line-height: 90rpx;
+    text-align: center;
+    margin: 20rpx 0;
+}
+
+.moneyValue {
+    width: 70%;
+    height: 90rpx;
+    margin: 0 auto;
+}
+
+.moneyValue .icon {
+    width: 20%;
+    height: 90rpx;
+    display: inline-block;
+    line-height: 90rpx;
+    font-size: 48rpx;
+    text-align: right;
+    float: left;
+    color: #080808;
+}
+
+.moneyValue .input {
+    width: 75%;
+    float: right;
+    height: 90rpx;
+    border: 0;
+    outline: 0;
+    padding-left: 6px;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    line-height: 90rpx;
+}
+
+.desc {
+    color: #808080;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.btn {
+    width: 252rpx;
+    height: 90rpx;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    line-height: 90rpx;
+    background-color: #ff6d3e;
+    border-radius: 8rpx;
+    margin-left: 30%;
+    margin-top: 20rpx;
+}
+.closeImg{
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 20rpx;
+	right: 16rpx;
+}
+.closeImg image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
